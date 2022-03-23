@@ -15,10 +15,10 @@ ENV PATH $HADOOP_HOME/bin/:$PATH
 
 # Install
 RUN apt-get update
-RUN apt-get install gnupg
 RUN apt-get install -y curl
 RUN apt-get install -y vim
 RUN apt-get install -y net-tools
+RUN apt-get install -y gnupg
 RUN apt-get install -y openjdk-8-jdk
 RUN rm -rf /var/lib/apt/lists/*
 
