@@ -1,0 +1,8 @@
+# How to run single node cluster
+
+# docker file build
+$ docker build -t hadoop3_single:1.0 .
+$ docker run -d -it --name "hadoop3_single" hadoop3_single:1.0
+
+# connect container to bash
+$ docker exec -it hadoop3_single bash
